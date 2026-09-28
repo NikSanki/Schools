@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2>REGISTRATION FORM</h2>
+    <!-- action backened PHPfile name -->
+    <form action="insert.php" method="POST">
+        <label>Name *</label><br>
+        <input type="text" name="first_name" placeholder="First name" required>
+        <input type="text" name="last_name" placeholder="Last name" required><br><br>
+
+        <label>Date Of Birth: *</label>
+        <input type="date" name="dob" required><br><br>
+
+        <label>Gender *</label>
+        <input type="radio" name="gender" value="Male" required> Male
+        <input type="radio" name="gender" value="Female"> Female<br><br>
+
+        <label>Email *</label><br>
+        <input type="email" name="email" placeholder="Enter your Email Id" required><br><br>
+
+        <label>Password *</label><br>
+        <input type="password" name="password" placeholder="Create Password" required><br><br>
+
+        <label>Phone Number *</label><br>
+        <input type="text" name="phone" placeholder="Enter your Phone No" required><br><br>
+
+        <label>Choose Course *</label><br>
+        <select name="course" required>
+            <option value="">Choose option</option>
+            <option value="Software Testing">Software Testing</option>
+            <option value="Core Java">Core Java</option>
+            <option value="Software Automation Testing">Software Automation Testing</option>
+            <option value="Software Manual Testing">Software Manual Testing</option>
+        </select><br><br>
+
+       <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>
